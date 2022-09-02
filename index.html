@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto">
+    <div class="flex flex-row w-full justify-end px-10 py-5">
+        <ul class="flex space-x-5">
+            <li><a href="image.html"
+                    class="transition ease-in-out hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Image</a>
+            </li>
+            <li><a href="advance.html"
+                    class="transition ease-in-out hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Advance</a>
+            </li>
+        </ul>
+    </div>
+    <main class="flex flex-col justify-center w-full text-center gap-5 mt-32">
+        <h1
+            class="font-extrabold text-transparent text-9xl bg-clip-text bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 leading-normal">
+            Google</h1>
+        <form action="https://www.google.com/search" method="get"
+            class="flex flex-col justify-center items-center space-y-5">
+            <div class="relative w-1/3">
+                <input type="text" name="q" id="q" placeholder="กรอกคำที่ต้องการค้นหา" required
+                    class="border rounded-md px-4 py-2 text-center text-md text-gray-800 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 absolute left-2 top-2 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+            <div class="flex space-x-2 items-center">
+                <button type="submit"
+                    class="bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 text-white px-8 py-2 rounded-md text-xl flex"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    ค้นหา</button>
+                <a href="https://www.google.com/doodles"
+                    class="bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 text-white px-8 py-2 rounded-md text-xl flex">
+                    I’m Feeling Lucky
+                </a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
