@@ -7,45 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google | Search</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body class="container mx-auto">
     <div class="flex flex-row w-full justify-end px-10 py-5">
         <ul class="flex space-x-5">
             <li><a href="image.html"
-                    class="transition ease-in-out hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Image</a>
+                    class="font-light transition ease-in-out hover:bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 hover:text-white px-4 py-2 rounded-md">Image</a>
             </li>
             <li><a href="advance.html"
-                    class="transition ease-in-out hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Advance</a>
+                    class="font-light transition ease-in-out hover:bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 hover:text-white px-4 py-2 rounded-md">Advance</a>
             </li>
         </ul>
     </div>
-    <main class="flex flex-col justify-center w-full text-center gap-5 mt-32">
+    <main class="flex flex-col justify-center items-center w-full text-center gap-5 mt-36">
         <h1
-            class="font-extrabold text-transparent text-9xl bg-clip-text bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 leading-normal">
+            class="font-semibold text-transparent text-8xl bg-clip-text bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 leading-normal">
             Google</h1>
+        <!-- <img src="image/logo.png" alt="Logo" class="w-72"> -->
         <form action="https://www.google.com/search" method="get"
             class="flex flex-col justify-center items-center space-y-5">
-            <div class="relative w-1/3">
-                <input type="text" name="q" id="q" placeholder="กรอกคำที่ต้องการค้นหา" required
-                    class="border rounded-md px-4 py-2 text-center text-md text-gray-800 w-full">
+            <div class="relative w-[584px]">
+                <input type="text" name="q" id="q" placeholder="" required
+                    class="border rounded-full px-4 py-2 text-center text-md text-gray-800 w-full focus:shadow-md hover:shadow-md focus:outline-0 text-start pl-10">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6 absolute left-2 top-2 text-gray-500">
+                    stroke="currentColor" class="w-5 h-5 absolute left-3 top-2.5 text-gray-400">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
+                <input type="hidden" name="tbm" value="isch">
             </div>
             <div class="flex space-x-2 items-center">
                 <button type="submit"
-                    class="bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 text-white px-8 py-2 rounded-md text-xl flex"><svg
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                    ค้นหา</button>
+                    class="text-black bg-gray-100 px-4 py-2 rounded-md text-sm hover:shadow-md border border-transparent hover:border hover:border-gray-200 font-light">
+                    Google Search</button>
                 <a href="https://www.google.com/doodles"
-                    class="bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 text-white px-8 py-2 rounded-md text-xl flex">
+                    class="transition text-black bg-gray-100 px-4 py-2 rounded-md text-sm hover:bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 hover:text-white hover:shadow-md border border-transparent hover:border hover:border-gray-200 font-light">
                     I’m Feeling Lucky
                 </a>
             </div>
